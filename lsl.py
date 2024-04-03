@@ -10,8 +10,6 @@ def main():
     parser.add_argument("-s", "--sorted", action="store_true")
     parser.add_argument("location", type=str, nargs="?", default=None)
     args = parser.parse_args()
-    # to run this, you need to have which installed. I use github's version.
-    #print(args.location, args.select)
     if args.location:
         args.location = args.location.lstrip("/")
     
